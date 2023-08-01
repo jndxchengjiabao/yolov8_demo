@@ -1,0 +1,16 @@
+person
+head
+door_open
+door_half_open
+door_close
+daizi
+bottle
+bag
+box
+plastic_basket
+suitcase
+mobile_phone
+umbrella
+folder
+bicycle
+electric_scooter
