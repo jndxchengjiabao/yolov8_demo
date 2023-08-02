@@ -171,7 +171,8 @@ class YoLov8TRT(object):
         self.ctx.pop()
         # Here we use the first row of output in that batch_size = 1
         output = host_outputs[0]
-        output = self.parse_oneout(output)
+        output = np.reshape(output, [self.batch_size,self.num_grids,self.num_decode])
+        # output = self.parse_oneout(output)
         # print(output.shape)
         # Do postprocess
         results_batch = []
